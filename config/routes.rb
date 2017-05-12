@@ -14,9 +14,7 @@ Rails.application.routes.draw do
           post :return
         end
       end
-
      end
-   end
 
    resources :products do
      member do
