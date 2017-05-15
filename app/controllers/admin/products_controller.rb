@@ -13,6 +13,16 @@ class Admin::ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def create
+    @product = Product.new(product_params)
+
+    if @product.save
+      redirect_to admin_products_path
+    else
+      render :new
+    end
+  end
+
   def edit
     @product = Product.find(params[:id])
   end
@@ -27,15 +37,7 @@ class Admin::ProductsController < ApplicationController
     end
   end
 
-  def create
-    @product = Product.new(product_params)
 
-    if @product.save
-      redirect_to admin_products_path
-    else
-      render :new
-    end
-  end
 
   private
 

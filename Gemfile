@@ -39,6 +39,7 @@ gem 'jbuilder', '~> 2.5'
  gem 'letter_opener', group: :development
  gem 'aasm'
  gem 'carrierwave-qiniu'
+ gem 'qiniu-rs'
  gem 'figaro'
 
 

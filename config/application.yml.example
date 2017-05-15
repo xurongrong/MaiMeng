@@ -22,10 +22,10 @@ production:
 
 
  development:
-   qiniu_access_key: 8Qss0gDy4vDwl5xMypE9UXIPbjozTTJuiYuLPLsO   # 你的 qiniu AccessKey
+   qiniu_access_key: Qss0gDy4vDwl5xMypE9UXIPbjozTTJuiYuLPLsO  # 你的 qiniu AccessKey
 
    qiniu_secret_key: 45mTezShdbmkJq2cwmHpV9PLCm9UlOM0fdTIpec0  # 你的 qiniu SecretKey
 
    qiniu_bucket: maimeng  # 你的 qiniu bucket
 
-   qiniu_bucket_domain: opz2nmtwx.bkt.clouddn.com  # 你的 qiniu bucket domain
+   qiniu_bucket_domain: opz2nmtwx.bkt.clouddn.com   # 你的 qiniu bucket domain
