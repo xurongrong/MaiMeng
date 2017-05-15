@@ -38,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
  gem 'mini_magick'
  gem 'letter_opener', group: :development
  gem 'aasm'
+ gem 'carrierwave-qiniu'
+
 
 
 group :development, :test do
