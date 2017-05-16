@@ -18,10 +18,54 @@
  @import "bootstrap";
  @import "font-awesome";
 
+/*导航栏CSS设置*/
+
+.navbar-default {
+     background-color: #212121;
+     border-color: #212121;
+     margin-bottom: 0;
+     border-radius: 0;
+ }
+
+ .navbar-brand {
+      color: white;
+      font-size: 15px;
+  }
+
+  .navbar-default .navbar-brand:hover,
+   .navbar-default .navbar-brand:focus {
+       color: white;
+       background-color: transparent;
+   }
+
+   .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+     color: white;
+     background-color: transparent;
+ }
+
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+     color: #FF6F00;
+     background-color: #FFE0B2;
+ }
+
+ .navbar-default .navbar-nav > .open > a,
+ .navbar-default .navbar-nav > .open > a:focus,
+ .navbar-default .navbar-nav > .open > a:hover {
+     background-color: #FFE0B2;
+     color: #212121;
+   }
+/*导航栏CSS设置*/
+
+/*landing page 第一块*/
+
  .jumbotron1 {
-  background-image:url('https://ww4.sinaimg.cn/large/006tKfTcgy1ffm5t6r8e7j30em09qmxc.jpg');
-  background-repeat: repeat-x;
+  background-image:url('http://static8.depositphotos.com/1026266/851/i/950/depositphotos_8516617-stock-photo-happy-group-of-finger-smileys.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
   margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 100px;
@@ -30,7 +74,9 @@
 .title {
   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
+  padding-top:30px; 
+  padding-bottom: 100px;
   margin-bottom: 80px;
 }
 
@@ -43,8 +89,22 @@
   top: 12px;
 }
 
-.lead {
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
-}
+  .lead {
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+  }
+
+/*landing page 第一块*/
+
+/*footer */
+
+  footer {
+      color: white;
+  }
+
+  footer .footer-below {
+      margin-top: 15px;
+      padding-top: 10px;
+      background-color: #233140;
+  }
