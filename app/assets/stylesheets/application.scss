@@ -75,7 +75,7 @@
   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
   text-align: center;
   margin-top: 100px;
-  padding-top:30px; 
+  padding-top:30px;
   padding-bottom: 100px;
   margin-bottom: 80px;
 }
@@ -96,6 +96,18 @@
   }
 
 /*landing page 第一块*/
+
+/* 表情轮播效果 */
+
+.carousel {
+  width: 1200px;
+  margin: 0 auto;
+}
+.carousel .item {
+  height: 375px;
+}
+
+/* 表情轮播效果 */
 
 /*footer */
 
