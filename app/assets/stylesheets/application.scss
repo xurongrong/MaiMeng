@@ -101,3 +101,53 @@
 }
 
 //-----首图------end
+
+// 第二部分轮播图
+
+.section-title{
+  text-align: center;
+  font-size: 18px;
+  font-family: inherit; // 后续再修改
+  color: #f9b294;
+  // text-decoration: underline; 待考虑
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.short-line {
+  color: green;
+  line-height: 10px;
+}
+
+
+.carousel-inner img {
+
+  margin-left: 45px;
+  background-position: center;
+  background-color: red;
+
+}
+
+// 设置向右轮播箭头的颜色
+.carousel-control.right {
+    left: auto;
+    right: -50px;
+    color:red;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+  }
+
+  // 设置向左轮播箭头的颜色
+  .carousel-control.left {
+      right: auto;
+      left: -50px;
+      color:red;
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+      background-repeat: repeat-x;
+    }
+
+
+// 第二部分轮播图 end
