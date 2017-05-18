@@ -26,6 +26,7 @@
      border-color: black; //边框色
 
      margin-bottom: 0; //底部 margin 不撑开距离
+   }
 
 .navbar-nav{
   .active
@@ -35,7 +36,6 @@
   }
  }
 
-}
 
 @media (min-width: 768px) {
   .navbar {
@@ -102,7 +102,7 @@
 
 //-----首图------end
 
-// 第二部分轮播图
+//---- 第二部分轮播图----
 
 .section-title-1 {
   text-align: center;
@@ -169,25 +169,24 @@
     }
 
 
-// 第二部分轮播图 end
+//----第二部分轮播图---end
 
 
-// 第四部分用户反馈
 
-    .wow fadeInUp {
-
-    position: relative;
-    right: -20px;
-    font-size: 18px;
-    font-family: inherit; // 后续再修改
-    color: #f9b294;
-    // text-decoration: underline; 待考虑
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-
-  }
 
 
 
 // 第四部分用户反馈
+
+    .wowfadeInUp {
+      position: relative;
+      right: -20px;
+      font-size: 18px;
+      font-family: inherit;
+      color: #f9b294;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+
+// 第四部分用户反馈 end
