@@ -51,6 +51,7 @@
   background-image:url("cat-header.jpg");
   background-repeat: repeat-x;
   background-size: cover;
+  background-color: #82908E;
   // margin-top: 0px;
   margin: 0px -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
 
@@ -59,20 +60,26 @@
 }
 
 .title {
-  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  font-family: "Wawati SC", 娃娃体;
+  font-size: 40px;
+  color: white;
   text-align: left;//左对齐
   margin-top: 200px;
   margin-left: 60px;
   margin-bottom: 80px;
+
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
 }
+
 
 .slogan {
   margin-top: 50px;
   margin-left: 115px;
   margin-bottom:10px;
   text-align: left;
-  color: #f79571;
-  font-style: italic;
+  font-family: "Wawati SC", 娃娃体;
+  color: white;
   font-size: 32px;//字体大小
   top: 12px;
 }
@@ -81,7 +88,15 @@
   margin-top: 80px;
   margin-left: 190px;
   margin-bottom: 60px;
+  font-family: "Wawati SC", 娃娃体;
+  font-size: 14px;
+  color: white;
   text-align: left;
+
+  .btn btn-default {
+   background-color: #82908E;
+   color : white;
+ }
 
 .btn.btn-primary-start{
     background-color: transparent;
@@ -91,6 +106,7 @@
     font-size: 20px;
     letter-spacing: 1px;
 }
+
 
 .btn.btn-primary-start:hover{
     background-color: #f79571;//鼠标移动到按钮上变色
@@ -104,34 +120,71 @@
 
 //---- 第二部分轮播图----
 
+// 控制文字“私人定制，专属表情”
 .section-title-1 {
   text-align: center;
-  font-size: 18px;
-  font-family: inherit; // 后续再修改
-  color: #f9b294;
+  font-family: "Wawati SC", 娃娃体;
+  font-size: 20px;
+  color: #453A30;
   // text-decoration: underline; 待考虑
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
+p .section-title-1 {
+	/* Font & Text */
+	font-family: "Wawati SC", 娃娃体;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 25.7143px;
+	text-decoration: none solid rgb(249, 178, 148);
+	text-align: center;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
 
-.section-title-2 {
-  text-align: center;
-  font-size: 18px;
-  font-family: inherit; // 后续再修改
-  color: #f9b294;
-  // text-decoration: underline; 待考虑
-  margin-top: 50px;
-  margin-bottom: 50px;
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(249, 178, 148);
+
+	/* Box */
+
+	margin: 300px 0px;
+	padding: 10px;
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: absolute;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
 }
+
 
 .section-title-3 {
   text-align: center;
-  font-size: 18px;
-  font-family: inherit; // 后续再修改
-  color: #f9b294;
+  font-family: "Wawati SC", 娃娃体;
+  font-size: 20px;
+  color: #453A30;
   // text-decoration: underline; 待考虑
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -149,7 +202,7 @@
 // 设置向右轮播箭头的颜色
 .carousel-control.right {
     left: auto;
-    right: -50px;
+    right: -20px;
     color:red;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
@@ -160,7 +213,7 @@
   // 设置向左轮播箭头的颜色
   .carousel-control.left {
       right: auto;
-      left: -50px;
+      left: -20px;
       color:red;
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
@@ -172,7 +225,66 @@
 //----第二部分轮播图---end
 
 
+// 第三部分服务特色
 
+.section-title-2 {
+  text-align: center;
+
+  font-size: 20px;
+  font-family: "Wawati SC", 娃娃体;
+  color: #453A30;
+  // text-decoration: underline; 待考虑
+  padding-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+#service .row {
+	/* Color & Background */
+	background-attachment: scroll;
+  background-color: #EFF1F0;
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(51, 51, 51);
+
+	/* Box */
+	height: 576.667px;
+	width: 1186.67px;
+	border: 0px none rgb(51, 51, 51);
+	border-top: 0px none rgb(51, 51, 51);
+	border-right: 0px none rgb(51, 51, 51);
+	border-bottom: 0px none rgb(51, 51, 51);
+	border-left: 0px none rgb(51, 51, 51);
+  margin-top: 200px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+
+
+	/* Positioning */
+	position: relative;
+	top: auto;
+	bottom: 120px;
+	right: auto;
+	left: auto;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: auto;
+
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 50px;
+}
+
+// 第三部分服务特色 end
 
 
 
