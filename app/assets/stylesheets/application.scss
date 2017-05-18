@@ -21,9 +21,9 @@
 //-----navbar-----
 
 .navbar-default {
-     background-color: #F9B294;  //背景颜色
+     background-color: black;  //背景颜色
 
-     border-color: #F9B294; //边框色
+     border-color: black; //边框色
 
      margin-bottom: 0; //底部 margin 不撑开距离
 
@@ -104,7 +104,7 @@
 
 // 第二部分轮播图
 
-.section-title{
+.section-title-1 {
   text-align: center;
   font-size: 18px;
   font-family: inherit; // 后续再修改
@@ -113,10 +113,29 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.short-line {
-  color: green;
-  line-height: 10px;
+
+
+.section-title-2 {
+  text-align: center;
+  font-size: 18px;
+  font-family: inherit; // 后续再修改
+  color: #f9b294;
+  // text-decoration: underline; 待考虑
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
+.section-title-3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: inherit; // 后续再修改
+  color: #f9b294;
+  // text-decoration: underline; 待考虑
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
 
 
 .carousel-inner img {
@@ -151,3 +170,24 @@
 
 
 // 第二部分轮播图 end
+
+
+// 第四部分用户反馈
+
+    .wow fadeInUp {
+
+    position: relative;
+    right: -20px;
+    font-size: 18px;
+    font-family: inherit; // 后续再修改
+    color: #f9b294;
+    // text-decoration: underline; 待考虑
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+  }
+
+
+
+// 第四部分用户反馈
