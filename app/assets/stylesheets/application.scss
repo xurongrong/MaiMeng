@@ -64,9 +64,53 @@
   font-size: 40px;
   color: white;
   text-align: left;//左对齐
+  text-decoration: blink;
   margin-top: 200px;
   margin-left: 60px;
   margin-bottom: 80px;
+
+  h1 .title {
+	/* Font & Text */
+	font-family: "Wawati SC", 娃娃体;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	letter-spacing: normal;
+	line-height: 44px;
+	text-decoration: blink solid rgb(255, 255, 255);
+	text-align: left;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgb(255, 255, 255);
+
+
+
+
+	/* List */
+	list-style-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+
+}
 
   -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;

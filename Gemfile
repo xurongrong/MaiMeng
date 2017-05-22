@@ -41,6 +41,9 @@ gem 'jbuilder', '~> 2.5'
  gem 'carrierwave-qiniu'
  gem 'qiniu-rs'
  gem 'figaro'
+ gem 'ransack'
+ gem 'will_paginate'
+ gem 'will_paginate-bootstrap'
 
 
 

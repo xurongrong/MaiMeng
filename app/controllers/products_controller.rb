@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  before_action :validate_search_key, only: [:search]
+
   def index
      @products = Product.all
   end
@@ -19,3 +21,24 @@ class ProductsController < ApplicationController
     redirect_to :back
   end
 end
+
+def search
+  if @query_string.present?
+    search_result = product.ransack(@search_criteria).result(:distinct => true)
+    @jproduct = search_result.paginate(:page => params[:page], :per_page => 5 )
+  end
+end
+
+protected
+  def validate_search_key
+    @query_string = params[:q].gsub(/\\|\'|\/|\?/, "")
+    if params[:q].present?
+      @search_criteria =  {
+      product_name: @query_string
+      }
+    end
+  end
+
+  def search_criteria(query_string)
+    { :product_name => query_string }
+  end
