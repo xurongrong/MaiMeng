@@ -319,12 +319,19 @@ p .section-title-1 {
       position: relative;
       right: -20px;
       font-size: 18px;
-      font-family: inherit;
+      font-family: "Wawati SC", 娃娃体;
       color: #f9b294;
       margin-top: 50px;
       margin-bottom: 50px;
     }
 
+    body {
+        font-family: "Wawati SC", 娃娃体;
+        font-size: 16px;
+        line-height: 1.42857143;
+        color: #333333;
+        background-color: #fff;
+    }
 
 // 第四部分用户反馈 end
 
