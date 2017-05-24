@@ -57,7 +57,7 @@ body {
 .navbar-nav{
   .active
   a{
-    color: #555;
+    color: white;
     background-color: #f9b294;//product背景颜色
   }
  }
@@ -67,6 +67,16 @@ body {
   .navbar {
     border-radius: 0; //圆角为0
   }
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;  //改变导航栏文字字体颜色为白色
+  font-size: 19px;
 }
 
 //-----navbar-----end
@@ -118,6 +128,7 @@ body {
   font-size: 14px;
   color: white;
   text-align: left;
+}
 
   .btn btn-default {
    background-color: #82908E;
@@ -126,7 +137,7 @@ body {
 
 .btn.btn-primary-start{
     background-color: transparent;
-    color: #f79571;//按钮字体颜色
+    color: white;//按钮字体颜色
     border-color: #f79571;
     padding: 10px 20px;
     font-size: 20px;
@@ -137,10 +148,12 @@ body {
 .btn.btn-primary-start:hover{
     background-color: #f79571;//鼠标移动到按钮上变色
     border-color: #f79571;
-    color: #fff;
+    color: white;
 }
 
-}
+
+
+
 
 //-----首图------end
 
