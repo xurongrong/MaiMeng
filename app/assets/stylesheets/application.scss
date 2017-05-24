@@ -328,7 +328,7 @@ p .section-title-1 {
 
 
 
-// 第四部分用户反馈
+// 第四部分用户评价
 
     .wowfadeInUp {
       position: relative;
@@ -340,15 +340,33 @@ p .section-title-1 {
       margin-bottom: 50px;
     }
 
+    section-title-3 {
+      text-align: center;
+
+      font-size: 30px;
+      font-family: "Wawati SC", 娃娃体;
+      color: #453A30;
+      // text-decoration: underline; 待考虑
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-top: 10px;
+    }
+
+    div .container {
+      margin : 10 103px 0 103px;
+      padding : 0 15px 0 15px;
+    }
+
+
     body {
         font-family: "Wawati SC", 娃娃体;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.42857143;
         color: #333333;
         background-color: #fff;
     }
 
-// 第四部分用户反馈 end
+// 第四部分用户评价 end
 
 
 //---------Footer---------
