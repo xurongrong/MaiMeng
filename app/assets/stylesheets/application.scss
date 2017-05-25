@@ -24,8 +24,7 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  // margin-bottom: 100px;
+  font-family: "Wawati SC", 娃娃体;
 }
 
 //-----devise-view
@@ -83,77 +82,43 @@ body {
 
 //-----首图------
 
- .jumbotron1 {
-  background-image: url(cat-header.jpg);
-  background-repeat: repeat-x;
+.jumbotron1 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/14/20/52/cat-1824668_1280.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: #82908E;
-  // margin-top: 0px;
-  margin: 0px -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  margin: 0px -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);
+  text-align: center;
 
-  padding-top: 20px;
-  padding-bottom: 100px;
-}
+  .title {
 
-.title {
-  font-family: "Wawati SC", 娃娃体;
-  font-size: 40px;
-  color: white;
-  text-align: left;//左对齐
-  margin-top: 200px;
-  margin-left: 60px;
-  margin-bottom: 80px;
+  h1 {
+      font-size: 90px;
+  }
 
-  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
-}
-
-
-.slogan {
-  margin-top: 50px;
-  margin-left: 115px;
-  margin-bottom:10px;
-  text-align: left;
-  font-family: "Wawati SC", 娃娃体;
-  color: white;
-  font-size: 32px;//字体大小
-  top: 12px;
-}
-
-.lead {
-  margin-top: 80px;
-  margin-left: 190px;
-  margin-bottom: 60px;
-  font-family: "Wawati SC", 娃娃体;
-  font-size: 14px;
-  color: white;
-  text-align: left;
-}
-
-  .btn btn-default {
-   background-color: #82908E;
-   color : white;
- }
-
-.btn.btn-primary-start{
-    background-color: transparent;
-    color: white;//按钮字体颜色
-    border-color: #f79571;
-    padding: 10px 20px;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-
-.btn.btn-primary-start:hover{
-    background-color: #f79571;//鼠标移动到按钮上变色
-    border-color: #f79571;
+    font-family: "Wawati SC", 娃娃体;
+    font-size: 60px;
     color: white;
+    margin-top: 100px;
+    margin-bottom: 130px;
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+      animation: mymove 5s infinite;
+  }
+
+  .lead {
+    font-family: "Wawati SC", 娃娃体;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+
+    .btn {
+      padding: 5px 10px;
+      font-size: 20px;
+      color: white;
+      background-color: rgba(250, 250, 250, 0.29);
+    }
+  }
 }
-
-
-
-
 
 //-----首图------end
 
@@ -167,74 +132,17 @@ body {
   color: #453A30;
   // text-decoration: underline; 待考虑
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-p .section-title-1 {
-	/* Font & Text */
-	font-family: "Wawati SC", 娃娃体;
-	font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	letter-spacing: normal;
-	line-height: 25.7143px;
-	text-decoration: none solid rgb(249, 178, 148);
-	text-align: center;
-	text-indent: 0px;
-	text-transform: none;
-	vertical-align: baseline;
-	white-space: normal;
-	word-spacing: 0px;
+.pic img{
 
-	/* Color & Background */
-	background-attachment: scroll;
-	background-color: rgba(0, 0, 0, 0);
-	background-image: none;
-	background-position: 0% 0%;
-	background-repeat: repeat;
-	color: rgb(249, 178, 148);
-
-	/* Box */
-
-	margin: 300px 0px;
-	padding: 10px;
-	max-height: none;
-	min-height: 0px;
-	max-width: none;
-	min-width: 0px;
-
-	/* Positioning */
-	position: absolute;
-	top: auto;
-	bottom: auto;
-	right: auto;
-	left: auto;
-	float: none;
-	display: block;
-	clear: none;
-	z-index: auto;
-}
-
-
-.section-title-3 {
-  text-align: center;
-  font-family: "Wawati SC", 娃娃体;
-  font-size: 20px;
-  color: #453A30;
-  // text-decoration: underline; 待考虑
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-
-
-
-.carousel-inner img {
-
-  margin-left: 45px;
+  margin-left: 70px;
+  position: center;
   background-position: center;
   background-color: red;
+  height: 240px; //图片大小
+  width: 240px;
 
 }
 
@@ -260,6 +168,13 @@ p .section-title-1 {
       background-repeat: repeat-x;
     }
 
+//---短线效果---
+.short-line {
+    background: #FC3F99;
+    margin: 15px auto 35px auto;
+    width: 125px;
+    height: 2px;
+}
 
 //----第二部分轮播图---end
 
@@ -274,7 +189,7 @@ p .section-title-1 {
   color: #453A30;
   // text-decoration: underline; 待考虑
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 
@@ -287,37 +202,10 @@ p .section-title-1 {
 	background-repeat: repeat;
 	color: rgb(51, 51, 51);
 
-	/* Box */
-	// height: 576.667px;
-	// width: 1186.67px;
-	// border: 0px none rgb(51, 51, 51);
-	// border-top: 0px none rgb(51, 51, 51);
-	// border-right: 0px none rgb(51, 51, 51);
-	// border-bottom: 0px none rgb(51, 51, 51);
-	// border-left: 0px none rgb(51, 51, 51);
-  // margin-top: 200px;
-  // margin-bottom: 10px;
-  // margin-right: 0px;
-  // margin-left: 0px;
-  // padding-right: 100px;
-  // padding-bottom: 0px;
-
   top: 0px;  //第三部分框架结构简化
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 50px;
   bottom: 0px;
-
-
-	/* Positioning */
-	// position: relative;
-	// top: auto;
-	// bottom: 120px;
-	// right: auto;
-	// left: auto;
-	// float: none;
-	// display: block;
-	// clear: none;
-	// z-index: auto;
 
 }
 
@@ -325,7 +213,6 @@ p .section-title-1 {
 //   margin-left: -15px;
 //   margin-right: -15px;
 //   margin-top: 50px;
-//
 // }
 
 .service-info {
@@ -334,7 +221,8 @@ p .section-title-1 {
 }
 
 .service-item-img  img{
-    height: 260px; //图片大小
+    height: 220px; //图片大小
+    border-radius: 110px;
 }
 
 // 第三部分服务特色 end
@@ -343,41 +231,20 @@ p .section-title-1 {
 
 // 第四部分用户评价
 
-    .wowfadeInUp {
-      position: relative;
-      right: -20px;
-      font-size: 18px;
-      font-family: "Wawati SC", 娃娃体;
-      color: #f9b294;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
+.customers {
+  margin-bottom: 100px;
+}
 
-    section-title-3 {
-      text-align: center;
+.section-title-3 {
+  text-align: center;
+  font-family: "Wawati SC", 娃娃体;
+  font-size: 20px;
+  color: #453A30;
+  // text-decoration: underline; 待考虑
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-      font-size: 30px;
-      font-family: "Wawati SC", 娃娃体;
-      color: #453A30;
-      // text-decoration: underline; 待考虑
-      margin-top: 50px;
-      margin-bottom: 50px;
-      padding-top: 10px;
-    }
-
-    div .container {
-      margin : 10 103px 0 103px;
-      padding : 0 15px 0 15px;
-    }
-
-
-    body {
-        font-family: "Wawati SC", 娃娃体;
-        font-size: 17px;
-        line-height: 1.42857143;
-        color: #333333;
-        background-color: #fff;
-    }
 
 // 第四部分用户评价 end
 
