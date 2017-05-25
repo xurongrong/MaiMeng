@@ -20,7 +20,7 @@ class Admin::ProductsController < ApplicationController
     @product = Product.new(product_params)
     @product.category_id = params[:category_id]
 
-    if @product.save!
+    if @product.save
       redirect_to admin_products_path
     else
       render :new
