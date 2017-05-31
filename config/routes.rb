@@ -4,6 +4,11 @@ Rails.application.routes.draw do
    root 'welcome#index'
 
    devise_for :users, controllers: {session: 'users/sessions'}
+  #  devise_for :users, :controllers => {
+  #   :sessions      => "users/sessions",
+  #   :registrations => "users/registrations",
+  #   :passwords     => "users/passwords",
+  # }
    namespace :admin do
      resources :products
      resources :orders do
