@@ -83,17 +83,16 @@ body {
 //-----首图------
 
 .jumbotron1 {
-  background-image:url("https://ww3.sinaimg.cn/large/006tKfTcgy1ffxmrwlb3mj30sg0hmanb.jpg");
+  // background-image:url("https://ww3.sinaimg.cn/large/006tKfTcgy1ffxmrwlb3mj30sg0hmanb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);
   text-align: center;
 
   .title {
-
-  h1 {
-      font-size: 90px;
-  }
+  // h1 {
+  //     font-size: 90px;
+  // }
 
     font-family: "Wawati SC", 娃娃体;
     font-size: 60px;
