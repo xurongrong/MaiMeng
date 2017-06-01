@@ -83,16 +83,17 @@ body {
 //-----首图------
 
 .jumbotron1 {
-  // background-image:url("https://ww3.sinaimg.cn/large/006tKfTcgy1ffxmrwlb3mj30sg0hmanb.jpg");
+  background-image:url("https://ww3.sinaimg.cn/large/006tKfTcgy1ffxmrwlb3mj30sg0hmanb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);
   text-align: center;
 
   .title {
-  // h1 {
-  //     font-size: 90px;
-  // }
+
+  h1 {
+      font-size: 90px;
+  }
 
     font-family: "Wawati SC", 娃娃体;
     font-size: 60px;
@@ -134,40 +135,38 @@ body {
   margin-bottom: 20px;
 }
 
-.d-block img-fluid {
+.pic img{
 
   margin-left: 70px;
   position: center;
   background-position: center;
   background-color: red;
   height: 240px; //图片大小
-
-   width:100%;
-   margin:auto;
+  width: 240px;
 
 }
 
-// // 设置向右轮播箭头的颜色
-// .carousel-control.right {
-//     left: auto;
-//     right: -20px;
-//     color:red;
-//     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
-//     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
-//     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
-//     background-repeat: repeat-x;
-//   }
-//
-//   // 设置向左轮播箭头的颜色
-//   .carousel-control.left {
-//       right: auto;
-//       left: -20px;
-//       color:red;
-//       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
-//       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
-//       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
-//       background-repeat: repeat-x;
-//     }
+// 设置向右轮播箭头的颜色
+.carousel-control.right {
+    left: auto;
+    right: -20px;
+    color:red;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+    background-repeat: repeat-x;
+  }
+
+  // 设置向左轮播箭头的颜色
+  .carousel-control.left {
+      right: auto;
+      left: -20px;
+      color:red;
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0000) 0%, rgba(0, 0, 0, 0) 100%);
+      background-repeat: repeat-x;
+    }
 
 //---短线效果---
 .short-line {

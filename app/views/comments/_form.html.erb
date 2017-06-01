@@ -1,0 +1,21 @@
+<!-- <%= simple_form_for(@comment) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :product_id %>
+    <%= f.input :body %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %> -->
+
+<%= simple_form_for([@product, @product.comments.build]) do |f|%>
+
+  <div class="field">
+      <%= f.text_area :body, class: "form-control" %>
+  </div>
+  <%= f.submit "Add a comment", class: "btn btn-primary" %>
+<% end %>
