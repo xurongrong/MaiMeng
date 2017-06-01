@@ -30,7 +30,7 @@ body {
 //-----devise-view
 
 .devise-image {
- background-image:url("https://cdn.pixabay.com/photo/2016/11/14/20/52/cat-1824668_1280.jpg");
+ background-image:url("https://ww3.sinaimg.cn/large/006tKfTcgy1ffxmrwlb3mj30sg0hmanb.jpg");
  background-repeat: no-repeat;
  background-size: cover;
 }
@@ -75,7 +75,7 @@ body {
 
 .navbar-default .navbar-nav > li > a {
   color: white;  //改变导航栏文字字体颜色为白色
-  font-size: 19px;
+  font-size: 18px;
 }
 
 //-----navbar-----end
@@ -83,7 +83,7 @@ body {
 //-----首图------
 
 .jumbotron1 {
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/14/20/52/cat-1824668_1280.jpg");
+  background-image:url("https://ww3.sinaimg.cn/large/006tKfTcgy1ffxmrwlb3mj30sg0hmanb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);
@@ -282,4 +282,10 @@ body {
       color: white;
     margin-top: 10px;
   }
+}
+
+div .col-md-6 {
+  background-color :  #FFFFFF;
+  background-position : 0% 0%;
+  color : #333333;
 }
