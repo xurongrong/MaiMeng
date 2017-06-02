@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap/alert
 //= require bootstrap/dropdown
-//= require_tree .
 //= require bootstrap/carousel
+//= require bootstrap-sprockets
+//= require_tree .

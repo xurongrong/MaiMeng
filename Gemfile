@@ -41,6 +41,7 @@ gem 'jbuilder', '~> 2.5'
  gem 'carrierwave-qiniu'
  gem 'qiniu-rs'
  gem 'figaro'
+ gem "intercom-rails"
 
 
 
