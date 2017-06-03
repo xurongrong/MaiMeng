@@ -29,6 +29,65 @@ body {
   // background-color: #F5F5F5;
 }
 
+//-----全部商品页面-----
+
+.products-list ul {
+  list-style: none;
+  padding: 0
+}
+
+.products-list li {
+  margin-top: 20px;
+  padding: 0;
+  width: 222px;
+  height: 340px;
+  list-style: none;
+  display: inline-block
+}
+
+.products-list p {
+  margin-bottom: 5px;
+  padding: 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%
+}
+
+.product-price {
+  margin: 7px;
+  border: 1px solid #fff;
+  height: 320px;
+  width: 212px;
+}
+
+.product-price:hover {
+  border-color: #1AA0E5; //鼠标放置在btn上的边框颜色
+}
+
+.product-price .price {
+  //product 商品列表的价格样式///
+  color: #e4393c;
+  font-size: 20px;
+}
+
+.line-products {
+  padding-top: 4px;
+  padding-bottom: 15px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+  background-color: #1BA2E6;
+}
+
+.line-products a{
+  color: white;
+  text-decoration: none;
+}
+
+//-----全部商品页面-----end
+
 //-----devise-view------登录注册界面
 
 .devise-image {
