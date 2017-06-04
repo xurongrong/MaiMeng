@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6">
       <% if @product.image.present? %>
-        <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
+        <%= image_tag(@product.image.medium.url, class: "thumbnail wow slideInLeft", data: {wow_delay: "0.1s"}) %>
       <% else %>
         <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
       <% end %>
@@ -19,6 +19,17 @@
       </div>
       <div> 数量 : <%= @product.quantity %> </div>
       <div class="price"> ￥ <%= @product.price %> </div>
+      <!--倒计时--->
+      <div id="getting-started"></div>
+      <script type="text/javascript">
+        $("#getting-started")
+        .countdown("<%= Time.zone.now + 2.days %>", function(event) {
+          $(this).text(
+            event.strftime('%D days %H:%M:%S')
+          );
+        });
+      </script>
+      <!---倒计时end-->
       <div class="pull-right">
          <% if @product.quantity.present? && @product.quantity > 0 %>
             <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post,
@@ -49,3 +60,8 @@
     <h1>—欢迎来到卖萌网—</h1>
   </div>
 </div>
+
+<!--输入框大小js-->
+<script type="text/javascript">
+  autosize($('#comment_body'));
+</script>
