@@ -23,6 +23,11 @@ Rails.application.routes.draw do
       end
      end
 
+  #  商品分类功能
+   resources :categories do
+     resources :products
+   end
+
    resources :products do
      member do
        post :add_to_cart
