@@ -1,40 +1,67 @@
-<div class="row">
-  <div class="col-md-6">
-    <% if @product.image.present? %>
-      <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
-    <% else %>
-      <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
-    <% end %>
-  </div>
-  <div class="col-md-6">
-    <h2> <%= @product.title %> </h2>
-
-
-
-    <div style="height:100px;">
-      <p>
-        <%= @product.description %>
-      </p>
-    </div>
-    <div> 数量 : <%= @product.quantity %> </div>
-    <div class="product-price"> ￥ <%= @product.price %> </div>
-    <div class="pull-right">
-       <% if @product.quantity.present? && @product.quantity > 0 %>
-          <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post,
-                    class: "btn btn-lg btn-danger") %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <% if @product.image.present? %>
+        <%= image_tag(@product.image.medium.url, class: "thumbnail wow slideInLeft", data: {wow_delay: "0.1s"}) %>
       <% else %>
-         已销售一空，无法购买
+        <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
       <% end %>
     </div>
+    <div class="col-md-6">
+      <h2> <%= @product.title %> </h2>
+
+
+
+      <div style="height:100px;">
+        <p>
+          <%= @product.description %>
+        </p>
+      </div>
+      <div> 数量 : <%= @product.quantity %> </div>
+      <div class="price"> ￥ <%= @product.price %> </div>
+      <!--倒计时--->
+      <div id="getting-started"></div>
+      <script type="text/javascript">
+        $("#getting-started")
+        .countdown("<%= Time.zone.now + 2.days %>", function(event) {
+          $(this).text(
+            event.strftime('%D days %H:%M:%S')
+          );
+        });
+      </script>
+      <!---倒计时end-->
+      <div class="pull-right">
+         <% if @product.quantity.present? && @product.quantity > 0 %>
+            <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post,
+                      class: "btn btn-lg btn-danger") %>
+        <% else %>
+           已销售一空，无法购买
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="comments_title">
+      <%= @product.comments.count %>
+      Comments
+    </h3>
+    <hr>
+    <div id="comments">
+      <%= render @product.comments%>
+      <%= render "comments/form"%>
+    </div>
   </div>
 </div>
 
-
-<h3 class="comments_title">
-   <%= @product.comments.count %> Comments
-</h3>
-<hr>
-<div id="comments">
-  <%= render @product.comments%>
-  <%= render "comments/form"%>
+<!--加入横行便于和footer隔开，避免遮挡-->
+<div class="row">
+  <div class="line-products">
+    <h1>—欢迎来到卖萌网—</h1>
+  </div>
 </div>
+
+<!--输入框大小js-->
+<script type="text/javascript">
+  autosize($('#comment_body'));
+</script>
