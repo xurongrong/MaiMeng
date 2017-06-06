@@ -43,8 +43,12 @@
 
   <div class="row">
     <h3 class="comments_title">
+      <% if @product.comments.count > 0 %>
       <%= @product.comments.count %>
       Comments
+      <% else %>
+      还没有评论，赶紧留言吧！
+      <% end %>
     </h3>
     <hr>
     <div id="comments">
