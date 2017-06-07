@@ -43,6 +43,7 @@ gem 'jbuilder', '~> 2.5'
  gem 'figaro'
  gem "intercom-rails"
  gem 'will_paginate'
+ gem 'bootstrap-wysihtml5-rails'
 
 
 
