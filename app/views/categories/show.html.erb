@@ -1,10 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <div class="category">
       <h3>
         Products under this category
       </h3>
-        <% Product.where(category_id: @category.id).each do |product| %>
+        <% @product.where(category_id: @category.id).each do |product| %>
       	<li>
         	  <%= product.title %>
       	</li>
@@ -19,6 +20,11 @@
       	<%= link_to 'Edit', edit_category_path(@category) %>
        |
       	<%= link_to 'Back', categories_path %>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="text-center">
+  <%= will_paginate @product %>
 </div>

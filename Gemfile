@@ -42,6 +42,7 @@ gem 'jbuilder', '~> 2.5'
  gem 'qiniu-rs'
  gem 'figaro'
  gem "intercom-rails"
+ gem 'will_paginate'
 
 
 
