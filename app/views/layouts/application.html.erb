@@ -5,7 +5,6 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
 
@@ -20,6 +19,7 @@
         </div>
 
         <%= render "common/footer" %>
-
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+       <%= yield :handwrite_javascript %>
     </body>
 </html>
