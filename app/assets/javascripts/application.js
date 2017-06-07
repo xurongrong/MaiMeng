@@ -21,6 +21,8 @@
 //= require jquery.countdown.min
 //= require_tree .
 
+<%=  content_for :handwrite_javascript do %>
+<script>
 $(document).ready(function(){
   new WOW().init();
 })
@@ -41,3 +43,5 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+</script>
+<% end %>
