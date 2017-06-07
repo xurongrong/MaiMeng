@@ -26,8 +26,8 @@
 //= require_tree .
 
 
-<%=  content_for :handwrite_javascript do %>
-<script>
+
+
 $(document).ready(function(){
   new WOW().init();
 })
@@ -48,8 +48,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-</script>
-<% end %>
+
 
 // 图片自适应大小支持代码块
 // 在product/show.html.erb的页面中，对img图片用这一格式进行校正
