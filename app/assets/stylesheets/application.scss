@@ -17,6 +17,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+ @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
 
 html {
   position: relative;
@@ -405,4 +406,20 @@ div .col-md-6 {
   background-color :  #FFFFFF;
   background-position : 0% 0%;
   color : #333333;
+}
+
+//leo-商品详情区域样式
+.product-detail {
+margin: 1.1em 0 3em;
+}
+.product-detail-box {
+border: 1px solid #e3e3e3;
+border-top: none;
+padding: 2em 1.2em;
+letter-spacing: 0.1em;
+text-align: center;
+line-height: 1.6em;
+img {
+max-width:100%;height:auto;             //重要样式代码，需要配合application.js的自适应代码块一起使用
+}
 }
