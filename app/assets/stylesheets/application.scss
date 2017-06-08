@@ -73,8 +73,26 @@ body {
   border-color: #1AA0E5; //鼠标放置在btn上的边框颜色
 }
 
+//首页和商品页面，图片放大1.1倍
+.product-price img {
+  transition: all 0.4s; /*这句代码的意思是，当这个元素的某个属性发现变化时，不是立刻完成，而是慢慢地在400ms内完成，这样就实现了动画的效果*/
+  -webkit-transition: all 0.4s;
+  -webkit-transition:all 0.4s ease-in-out; /*让「谷歌浏览器」支持这个属性*/
+  -moz-transition:all 0.4s ease-in-out; /*让「火狐浏览器」支持这个属性*/
+  -o-transition:all 0.4s ease-in-out; /*让「safari」支持属性*/
+  -ms-transition:all 0.4s ease-in-out; /*让「IE浏览器」支持这个属性*/
+}
+
+.product-price:hover img {
+  transform: scale(1.1); /*在400ms内，图片的尺寸从 1倍 放大到 1.1倍*/
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
 .product-price .price {
-  //product 商品列表的价格样式///
+//product 商品列表的价格样式
   color: #e4393c;
   font-size: 20px;
 }
@@ -99,6 +117,18 @@ body {
   text-decoration-line: none;
 }
 
+//商品show页面，图片从方形变圆形
+.product-show-img img {
+  transition: all .2s;
+  -webkit-transition: all 0.2s; /*让「谷歌浏览器」支持这个属性*/
+  -moz-transition: all 0.2s; /*让「火狐浏览器」支持这个属性*/
+  -o-transition: all 0.2s; /*让「safari」支持属性*/
+  -ms-transition: all 0.2s; /*让「IE浏览器」支持这个属性*/
+}
+
+.product-show-img:hover img {
+  border-radius: 50%; /*设置正方形的圆角为50%，就可以让它变成一个圆形*/
+}
 //-----全部商品页面-----end
 
 //-----devise-view------登录注册界面
@@ -266,12 +296,25 @@ body {
   border-radius: 10px;
 }
 
-.show-img {
-  img{
+//商品展示部分，图片放大1.1倍
+.show-img img {
     width: 200px;
     height: 200px; //图片大小
     border:1px solid #69C7ED;
-  }
+    transition: all 0.4s; /*这句代码的意思是，当这个元素的某个属性发现变化时，不是立刻完成，而是慢慢地在400ms内完成，这样就实现了动画的效果*/
+    -webkit-transition: all 0.4s;
+    -webkit-transition:all 0.4s ease-in-out; /*让「谷歌浏览器」支持这个属性*/
+    -moz-transition:all 0.4s ease-in-out; /*让「火狐浏览器」支持这个属性*/
+    -o-transition:all 0.4s ease-in-out; /*让「safari」支持属性*/
+    -ms-transition:all 0.4s ease-in-out; /*让「IE浏览器」支持这个属性*/
+}
+
+.show-img:hover img {
+  transform: scale(1.1); /*在400ms内，图片的尺寸从 1倍 放大到 1.1倍*/
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
 }
 
 .service-info {
@@ -279,10 +322,20 @@ body {
   font-size: 16px;  //服务简介字体大小
 }
 
+//服务与用户评价图片，圆形变方形效果
 .service-item-img  img{
     height: 200px; //图片大小
     border-radius: 100px;
     border:1px solid #69C7ED;
+    transition: all .2s;
+    -webkit-transition: all 0.2s; /*让「谷歌浏览器」支持这个属性*/
+    -moz-transition: all 0.2s; /*让「火狐浏览器」支持这个属性*/
+    -o-transition: all 0.2s; /*让「safari」支持属性*/
+    -ms-transition: all 0.2s; /*让「IE浏览器」支持这个属性*/
+}
+
+.service-item-img:hover  img{
+    border-radius: 0px;
 }
 
 //----- section3 ------服务 end
