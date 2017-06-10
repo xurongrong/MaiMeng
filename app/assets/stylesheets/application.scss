@@ -122,9 +122,9 @@ span {
   text-decoration-line: none;
 }
 
-//商品show页面，图片从方形变圆形
+//商品show页面，图片放大1.06倍
 .product-show-img img {
-  transition: all .2s;
+  transition: all 0.2s;
   -webkit-transition: all 0.2s; /*让「谷歌浏览器」支持这个属性*/
   -moz-transition: all 0.2s; /*让「火狐浏览器」支持这个属性*/
   -o-transition: all 0.2s; /*让「safari」支持属性*/
@@ -132,7 +132,12 @@ span {
 }
 
 .product-show-img:hover img {
-  border-radius: 50%; /*设置正方形的圆角为50%，就可以让它变成一个圆形*/
+  transform: scale(1.06); /*在200ms内，图片的尺寸从 1倍 放大到 1.06倍*/
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+
 }
 //-----全部商品页面-----end
 
