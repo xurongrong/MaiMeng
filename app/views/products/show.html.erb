@@ -2,10 +2,19 @@
   <div class="row">
     <div class="col-md-6">
       <div class="product-show-img">
-      <% if @product.image.present? %>
-        <%= image_tag(@product.image.medium.url, class: "thumbnail wow slideInLeft", data: {wow_delay: "0.1s"}) %>
+      <% if @photos.present? %>
+        <% @photos.each_with_index do |p, index| %>
+          <% if index == 0 %>
+            <%= image_tag p.avatar.medium.url %>
+            <!--图片对齐-->
+            <div style="letter-spacing: -8px">
+          <% else %>
+            <%= image_tag p.avatar.thumb.url %>
+          <% end %>
+        <% end %>
+        </div>
       <% else %>
-        <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+          <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
       <% end %>
       </div>
     </div>
